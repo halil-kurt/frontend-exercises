@@ -1,1 +1,1 @@
-# frontend-exercises
+# Frontend Exercises
