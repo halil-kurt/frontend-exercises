@@ -60,7 +60,7 @@ span {
 
 .card:hover .content {
 
-    animation-name: example;
+    animation-name: animasyon;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-delay: 0s;
@@ -69,7 +69,7 @@ span {
     animation-fill-mode: forwards;
 }
 
-@keyframes example {
+@keyframes animasyon {
     0% {
         transform: translateY(0px)
     }
