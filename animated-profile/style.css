@@ -1,0 +1,79 @@
+html {
+    margin: 0px;
+    background-color: #4f1aa3;
+    padding: 0px;
+
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.card {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #84088c;
+    z-index: 1;
+    border-radius: 5px;
+    -webkit-box-shadow: 8px 10px 18px 0px rgba(255, 0, 142, 0.91);
+    -moz-box-shadow: 8px 10px 18px 0px rgba(255, 0, 142, 0.91);
+    box-shadow: 8px 10px 18px 0px rgba(255, 0, 142, 0.91);
+
+
+}
+
+.profileImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 255, 0, 142;
+
+}
+
+span {
+    color: white;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -10;
+    color: white;
+    font-size: 20px;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.card:hover .content {
+
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+@keyframes example {
+    0% {
+        transform: translateY(0px)
+    }
+
+    100% {
+        transform: translateY(-25px)
+    }
+}
