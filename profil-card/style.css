@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.personIMg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.inner{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+/* 
+.plus{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+}
+
+.inner:hover .plus{
+    opacity: 0;
+}
+*/
+
+.inst,.git,.link{
+    opacity: 0;
+    position: absolute;
+    transition:transform 1s ;
+    color:rgb(94, 185, 19);
+}
+
+.inner:hover .personIMg{
+    opacity: 0.5;
+}
+
+.inner:hover .inst{
+    opacity: 1;
+    transform: translate(-80px, -30px); /*yukarı 30px - sola 80px */
+}
+
+.inner:hover .git{
+    opacity: 1;
+    transform: translate(-60px, -80px);/*yukarı 80px - sola 60px */
+}
+
+.inner:hover .link{
+    opacity: 1;
+    transform: translate(0px,-80px);/*yukarı 80px - sola 0px */
+}
